@@ -8,11 +8,7 @@ md joystick_gremlin
 
 cd ..
 
-@echo "Building executable ..."
-c:\python\python312\python -m PyInstaller -y --log-level INFO --clean joystick_gremlin.spec
-cd dist
-
-
+build.bat
 
 if exist joystick_gremlin.zip del joystick_gremlin.zip
 cd joystick_gremlin
